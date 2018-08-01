@@ -1,0 +1,14 @@
+#form {
+    display : block;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+#form2 {
+    display: inline-block;
+}
+#form3 {
+    display:inline-block;
+}
+body {
+    background: url(img/img.jpeg);
+    font-size: 20px;
+}

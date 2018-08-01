@@ -1,0 +1,12 @@
+{
+    "name": "eryo/tp-chat",
+    "authors": [
+        {
+            "name": "eryo05",
+            "email": "jeremy.gauthier@et.simplon-roanne.com"
+        }
+    ],
+    "require": {
+        "mistic100/randomcolor": "^1.0"
+    }
+}
