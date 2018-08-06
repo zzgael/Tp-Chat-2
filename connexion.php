@@ -6,7 +6,7 @@ try
 
 {
 
-    $bdd = new PDO('mysql:host=localhost;dbname=minichat;charset=utf8', 'root', '');
+    $bdd = new PDO('mysql:host=localhost;dbname=mini_chat_jeremy_g;charset=utf8', 'root', '');
 
 }
 
