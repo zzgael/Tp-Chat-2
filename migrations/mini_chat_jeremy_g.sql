@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le :  lun. 06 août 2018 à 11:43
+-- Généré le :  lun. 06 août 2018 à 13:28
 -- Version du serveur :  10.1.34-MariaDB
 -- Version de PHP :  7.2.7
 
@@ -37,6 +37,37 @@ CREATE TABLE `messages` (
   `useragent` text
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `users`
+--
+
+CREATE TABLE `users` (
+  `pseudo` varchar(255) NOT NULL,
+  `color` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `users`
+--
+
+INSERT INTO `users` (`pseudo`, `color`) VALUES
+('aaa', '#506be5'),
+('eryo', NULL),
+('eryo2', '#bf320b'),
+('flo', '#6ffc8d'),
+('marco', '#e9a8f4'),
+('marco zef', '#f4d8a6'),
+('qqswvc', '#e023b4'),
+('qqswvccs', '#91f7d5'),
+('scvc', '#ee8bf9'),
+('scvcdscscv', '#893ddb'),
+('test2', '#4fccc7'),
+('test5678', '#2cd3a9'),
+('teyger', '#e5a280'),
+('yoyo', '#a347d1');
+
 --
 -- Index pour les tables déchargées
 --
@@ -46,6 +77,12 @@ CREATE TABLE `messages` (
 --
 ALTER TABLE `messages`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`pseudo`);
 
 --
 -- AUTO_INCREMENT pour les tables déchargées
